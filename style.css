@@ -32,13 +32,13 @@ h1{
   }
   
   .cell{
-    border: 1px hidden; 
+    border: 1px dotted ; 
   }
 
   .sliderlabel{
     color: black;
   }
 
-  .colored{
+  #container > .colored{
     background-color: black;
   }
