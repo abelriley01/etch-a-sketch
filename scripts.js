@@ -39,3 +39,12 @@ window.addEventListener("mouseup", () => {
 function colorChange(event) {
   event.target.classList.add("colored");
 }
+
+const resetButton = document.getElementById("clear");
+resetButton.addEventListener("click", clearGrid);
+function clearGrid(){
+  const clearing = document.querySelectorAll("div");
+  clearing.forEach((div) => {
+    div.classList.remove("colored");
+  });
+}
