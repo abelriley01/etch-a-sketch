@@ -48,3 +48,11 @@ function clearGrid(){
     div.classList.remove("colored");
   });
 }
+
+const colorPicker = document.querySelector('#color-picker');
+
+colorPicker.addEventListener('input', function() {
+  const color = this.value;
+  const element = document.querySelector('.my-class');
+  element.style.color = color;
+});

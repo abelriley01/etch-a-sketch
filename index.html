@@ -10,14 +10,19 @@
 <body>
     <h1>Etch-a-Sketch</h1>
     <div id="container"></div>
-
-    <div class = "sliding">
-        <div class = "sliderlabel"> Select your grid size</div>
-        <span class="min-value">0</span>
-        <input type="range" min="0" max="100" value="50" class="slider">
-        <span class="max-value">100</span>
-      </div>
-    <button id="clear">Reset</button>
+    <div class="options">
+        <div class = "sliding">
+            <div class = "sliderlabel"> Select your grid size</div>
+            <span class="min-value">0</span>
+            <input type="range" min="0" max="64" value="50" class="slider">
+            <span class="max-value">64</span>
+        </div>
+        <button id="clear">Clear</button>
+        <div class="colorSelector">
+            <span>Choose your color</span>
+            <input type="color" id="colorPicker" value="#000000">
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
