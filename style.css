@@ -1,44 +1,60 @@
 html {
-    background-color: lightgrey;
+  background-color: lightgrey;
+}
+
+h1, .sliding, .options{
+  display:flex;
+  justify-content: center;
 }
 
 #container {
-    width: 1000px;
-    height:1000px;
-    max-width:1000px;
-    max-height:1000px;
-    background-color: white;
-
+  width: 1000px;
+  height:1000px;
+  max-width:1000px;
+  max-height:1000px;
+  background-color: white;
+  margin: 0 auto;
 }
-h1{
-    display:flex;
-    justify-content: center;
-    color: black;
+
+.colorSelector, #clear{
+  margin: 10px auto;
 }
-.min-value, .max-value {
-    color: black;
-    display: inline-block;
-    width: 40px;
-    text-align: center;
-  }
-  .sliding{
-    display:flex;
-    margin-top: 15px;
-    }
-  .slider {
-    width: 200px;
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .cell{
-    border: 1px dotted ; 
-  }
 
-  .sliderlabel{
-    color: black;
-  }
+h1, .min-value, .max-value, .sliderlabel{
+  color: black;
+}
 
-  #container > .colored{
-    background-color: black;
-  }
+.min-value, .max-value{
+  width: 40px;
+  text-align: center;
+}
+
+.sliding{
+  margin-top: 15px;
+}
+
+.slider {
+  width: 200px;
+  margin: 0 10px;
+}
+
+.slider, .min-value, .max-value{
+  display: inline-block;
+}
+.cell{
+  border: 1px dotted ; 
+}
+
+
+#container > .colored{
+  background-color: currentColor;
+}
+
+#clear{
+  width:100px;
+  height: 50px;
+}
+
+.options{
+  flex-direction: column;
+}
