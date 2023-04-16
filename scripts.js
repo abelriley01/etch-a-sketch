@@ -27,3 +27,16 @@ slider.oninput = function() {
       }
     }
 }
+
+const cells = document.getElementsByClassName("cell");
+Array.from(cells).forEach((cell)) => {
+cell.addEventListener("mousedown", () => {
+  cell.addEventListener("mouseover", colorChange);
+});
+window.addEventListener("mouseup", () => {
+  cell.removeEventListener("mouseover", colorChange);
+});
+
+function colorChange(){
+    this.classList.toggle("colored");
+}};

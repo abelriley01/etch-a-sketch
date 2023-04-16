@@ -8,8 +8,6 @@ html {
     max-width:1000px;
     max-height:1000px;
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(numCols, 1fr); 
 
 }
 h1{
@@ -34,9 +32,13 @@ h1{
   }
   
   .cell{
-    border: 1px hidden;
+    border: 1px hidden; 
   }
 
   .sliderlabel{
     color: black;
+  }
+
+  .colored{
+    background-color: black;
   }
